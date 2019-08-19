@@ -31,7 +31,7 @@ app.get('', (req, res) => {
 
 app.get('/about', (req, res) => {
     res.render("about", {
-        title: 'About',
+        title: 'About Me',
         name: "Kamal Mustafayev"
     })
 })
@@ -97,5 +97,5 @@ app.get('*', (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log("Server is up on port" + port)
+    console.log("Server is up on port " + port)
 })
